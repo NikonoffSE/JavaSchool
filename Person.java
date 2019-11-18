@@ -28,7 +28,11 @@ public class Person {
      * @return true - if person status has been changed
      */
     public boolean divorce() {
-
+        if (this.spouse != null) {
+            this.spouse = null;
+            return true;
+        }
+        else    
         return false;
     }
 
